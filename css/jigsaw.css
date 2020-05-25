@@ -100,7 +100,7 @@
   */
   left:0%;
   margin:0 auto;
-  background: url("./img/right.png") no-repeat;  
+  background: url("../img/right.png") no-repeat;  
   background-size:100% 100%;
   background-position:center center;
 }
@@ -112,7 +112,7 @@
   width: 80px;
   height: 80px;
   cursor: pointer;
-  background:url("./img/circle.png") no-repeat;
+  background:url("../img/circle.png") no-repeat;
   background-size:80px 80px;
   background-position:center center;
 

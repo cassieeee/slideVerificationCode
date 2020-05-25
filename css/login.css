@@ -41,7 +41,7 @@ html,body{
 }
 .icon {
     flex:1;
-    background:url("./img/icon.jpg") no-repeat;
+    background:url("../img/icon.jpg") no-repeat;
     background-position:center center;
     background-size:35% 55%;
     margin:0 auto;
