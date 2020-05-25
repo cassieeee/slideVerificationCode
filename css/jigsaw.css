@@ -1,0 +1,119 @@
+.block {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.sliderContainer {
+  position: relative;
+  text-align: center;
+  width: 620px;
+  height: 80px;
+  line-height: 80px;
+  margin-top: 15px;
+  background: #f7f9fa;
+  color: #45494c;
+  border: 1px solid #e4e7eb;
+  font-size: 2em;
+}
+
+.sliderContainer_active .slider {
+  height: 80px;
+  top: -1px;
+  border: 1px solid #1991FA;
+}
+
+.sliderContainer_active .sliderMask {
+  height: 80px;
+  border-width: 1px;
+}
+
+.sliderContainer_success .slider {
+  height: 80px;
+  top: -1px;
+  border: 1px solid #52CCBA;
+  background-color: #52CCBA !important;
+}
+
+.sliderContainer_success .sliderMask {
+  height: 80px;
+  border: 1px solid #52CCBA;
+  background-color: #D2F4EF;
+}
+
+.sliderContainer_success .sliderIcon {
+  background-position: 0 0 !important;
+}
+
+.sliderContainer_fail .slider {
+  height: 80px;
+  top: -1px;
+  border: 1px solid #f57a7a;
+  background-color: #f57a7a !important;
+}
+
+.sliderContainer_fail .sliderMask {
+  height: 80px;
+  border: 1px solid #f57a7a;
+  background-color: #fce1e1;
+}
+
+.sliderContainer_fail .sliderIcon {
+  background-position: 0 -83px !important;
+}
+.sliderContainer_active .sliderText, .sliderContainer_success .sliderText, .sliderContainer_fail .sliderText {
+  display: none;
+}
+
+.sliderMask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 40px;
+  border: 0 solid #1991FA;
+  background: #D1E9FE;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  background: #fff;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: background .2s linear;
+  font-size: 2em;
+}
+
+.slider:hover .sliderIcon {
+  background-position: center center;
+}
+
+.sliderIcon {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /*
+  用absolute定义一定要至少指定left/right/top/bottom中的其中一个
+  */
+  left:0%;
+  margin:0 auto;
+  background: url("./img/right.png") no-repeat;  
+  background-size:100% 100%;
+  background-position:center center;
+}
+
+.refreshIcon {
+  position: absolute;
+  right: 21px;
+  top: 15px;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  background:url("./img/circle.png") no-repeat;
+  background-size:80px 80px;
+  background-position:center center;
+
+}
